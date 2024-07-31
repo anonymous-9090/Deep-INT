@@ -1,0 +1,211 @@
+{
+  "target": "bmv2",
+  "p4info": "build/app.p4.p4info.txt",
+  "bmv2_json": "build/app.json",
+  "table_entries": [
+    {
+      "table": "ingress.doarp",
+      "match": {
+        "hdr.arp.arpTha": "00:00:00:00:00:00",
+        "hdr.arp.arpTpa": "10.0.1.1"
+      },
+      "action_name": "ingress.arpreply",
+      "action_params": {
+        "repmac": "08:00:00:00:01:01"
+      }
+    },
+    {
+      "table": "ingress.doarp",
+      "match": {
+        "hdr.arp.arpTha": "00:00:00:00:00:00",
+        "hdr.arp.arpTpa": "10.0.2.2"
+      },
+      "action_name": "ingress.arpreply",
+      "action_params": {
+        "repmac": "08:00:00:00:02:02"
+      }
+    },
+    {
+      "table": "ingress.doarp",
+      "match": {
+        "hdr.arp.arpTha": "00:00:00:00:00:00",
+        "hdr.arp.arpTpa": "10.0.3.3"
+      },
+      "action_name": "ingress.arpreply",
+      "action_params": {
+        "repmac": "08:00:00:00:03:03"
+      }
+    },
+    {
+      "table": "ingress.doarp",
+      "match": {
+        "hdr.arp.arpTha": "00:00:00:00:00:00",
+        "hdr.arp.arpTpa": "10.0.4.4"
+      },
+      "action_name": "ingress.arpreply",
+      "action_params": {
+        "repmac": "08:00:00:00:04:04"
+      }
+    },
+    {
+      "table": "ingress.doarp",
+      "match": {
+        "hdr.arp.arpTha": "00:00:00:00:00:00",
+        "hdr.arp.arpTpa": "10.0.5.5"
+      },
+      "action_name": "ingress.arpreply",
+      "action_params": {
+        "repmac": "08:00:00:00:05:05"
+      }
+    },
+    {
+      "table": "ingress.doarp",
+      "match": {
+        "hdr.arp.arpTha": "00:00:00:00:00:00",
+        "hdr.arp.arpTpa": "10.0.6.6"
+      },
+      "action_name": "ingress.arpreply",
+      "action_params": {
+        "repmac": "08:00:00:00:06:06"
+      }
+    },
+    {
+      "table": "ingress.doarp",
+      "match": {
+        "hdr.arp.arpTha": "00:00:00:00:00:00",
+        "hdr.arp.arpTpa": "10.0.7.7"
+      },
+      "action_name": "ingress.arpreply",
+      "action_params": {
+        "repmac": "08:00:00:00:07:07"
+      }
+    },
+    {
+      "table": "ingress.doarp",
+      "match": {
+        "hdr.arp.arpTha": "00:00:00:00:00:00",
+        "hdr.arp.arpTpa": "10.0.8.8"
+      },
+      "action_name": "ingress.arpreply",
+      "action_params": {
+        "repmac": "08:00:00:00:08:08"
+      }
+    },
+    {
+      "table": "ingress.doarp",
+      "match": {
+        "hdr.arp.arpTha": "00:00:00:00:00:00",
+        "hdr.arp.arpTpa": "10.0.9.9"
+      },
+      "action_name": "ingress.arpreply",
+      "action_params": {
+        "repmac": "08:00:00:00:09:09"
+      }
+    },
+    {
+      "table": "ingress.doarp",
+      "match": {
+        "hdr.arp.arpTha": "00:00:00:00:00:00",
+        "hdr.arp.arpTpa": "10.0.10.10"
+      },
+      "action_name": "ingress.arpreply",
+      "action_params": {
+        "repmac": "08:00:00:00:0a:0a"
+      }
+    },
+    {
+      "table": "ingress.doarp",
+      "match": {
+        "hdr.arp.arpTha": "00:00:00:00:00:00",
+        "hdr.arp.arpTpa": "10.0.11.11"
+      },
+      "action_name": "ingress.arpreply",
+      "action_params": {
+        "repmac": "08:00:00:00:0b:0b"
+      }
+    },
+    {
+      "table": "ingress.doarp",
+      "match": {
+        "hdr.arp.arpTha": "00:00:00:00:00:00",
+        "hdr.arp.arpTpa": "10.0.12.12"
+      },
+      "action_name": "ingress.arpreply",
+      "action_params": {
+        "repmac": "08:00:00:00:0c:0c"
+      }
+    },
+    {
+      "table": "ingress.doarp",
+      "match": {
+        "hdr.arp.arpTha": "00:00:00:00:00:00",
+        "hdr.arp.arpTpa": "10.0.13.13"
+      },
+      "action_name": "ingress.arpreply",
+      "action_params": {
+        "repmac": "08:00:00:00:0d:0d"
+      }
+    },
+    {
+      "table": "ingress.dosr",
+      "default_action": true,
+      "action_name": "ingress.srrouting",
+      "action_params": {}
+    },
+    {
+      "table": "ingress.ipv4_lpm",
+      "default_action": true,
+      "action_name": "ingress.forward",
+      "action_params": {
+        "dstAddr": "08:00:00:00:09:09"
+      }
+    },
+    {
+      "table": "ingress.ipv4",
+      "match": {
+        "hdr.ipv4.dstAddr": [
+          "10.0.2.60",
+          32
+        ]
+      },
+      "action_name": "ingress.ipv4_forward",
+      "action_params": {
+        "dstAddr": "08:00:00:00:01:00",
+        "port": 3
+      }
+    },
+    {
+      "table": "ingress.ipv4",
+      "match": {
+        "hdr.ipv4.dstAddr": [
+          "10.0.9.9",
+          32
+        ]
+      },
+      "action_name": "ingress.ipv4_forward",
+      "action_params": {
+        "dstAddr": "08:00:00:00:01:00",
+        "port": 3
+      }
+    },
+    {
+     "table": "ingress.setmetadata",
+     "action_name": "ingress.setdeviceno",
+     "action_params": {
+       "device_no": 8
+     }
+   },
+   {
+      "table": "ingress.dosocket",
+      "default_action": true,
+      "action_name": "NoAction",
+      "action_params": {}
+    },
+    {
+      "table": "egress.udp_int",
+      "default_action": true,
+      "action_name": "egress.do_int",
+      "action_params": {}
+    }
+  ]
+}
