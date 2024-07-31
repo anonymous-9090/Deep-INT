@@ -5,7 +5,7 @@
 - The development and testing environment for this project is based on [P4 tutorials](https://github.com/p4lang/tutorials/tree/master), which provides a series of P4 program examples and tools for learning and experimenting with the P4 language. Specifically, the project uses the following environment and tools:
   1. [P4 Compiler (p4c)](https://github.com/p4lang/p4c): Used to compile P4 programs into a format that the target device can understand.
   2. [Behavioral Model (BMv2)](https://github.com/p4lang/behavioral-model/blob/main/docs/simple_switch.md): A software P4 switch used for simulating and testing P4 programs. 
-  3. [Mininet](https://github.com/mininet/mininet) supporting bmv2 (https://github.com/nsg-ethz/p4-learning): Used to create and manage virtual network topologies for testing P4 programs in a simulated environment.
+  3. [Mininet](https://github.com/mininet/mininet) supporting bmv2: Used to create and manage virtual network topologies for testing P4 programs in a simulated environment.
   4. [P4Runtime](https://p4.org/specs/): Used for runtime control of the behavior of P4 switches.
 - Operating System: Linux Ubuntu 20.04
 - Python Version: >= 3.8
@@ -90,7 +90,7 @@ Used to do source routing and INT
 Used to define Headers and Metadatas
 ### System/INT/parser.p4
 Used to define parser, deparser and checksum calculator
-### System/INT/receivenew.py
+### System/INT/receiveint.py
 Used to collect INT probe packets and storing the collected network information in the database
 ### System/INT/sendint.py
 Used to send INT probe packets
