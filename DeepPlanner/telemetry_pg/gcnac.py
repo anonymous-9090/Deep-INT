@@ -20,7 +20,7 @@ def mlp(sizes, activation, dropout_flag=False, dropout=0.5, output_activation=nn
     return nn.Sequential(*layers)
 
 class GCN(torch.nn.Module):
-    def __init__(self, node_features, single_emb):      #输入v*node_features，输出v*single_emb
+    def __init__(self, node_features, single_emb):      #v*node_features，v*single_emb
         super(GCN, self).__init__()
         self.conv1 = GCNConv(node_features, single_emb)
         self.relu = torch.nn.ReLU()
@@ -33,7 +33,7 @@ class GCN(torch.nn.Module):
         if (len(x.size()) == 3):
             state_emb = torch.flatten(x, 1)
         else:
-            state_emb = torch.flatten(x)    #返回[v*single_emb]
+            state_emb = torch.flatten(x)    #[v*single_emb]
  
         return state_emb
     
