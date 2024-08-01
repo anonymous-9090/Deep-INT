@@ -91,7 +91,7 @@ class TelemetryPG(BasePolicy):
             Please refer to :meth:`~tianshou.policy.BasePolicy.forward` for
             more detailed explanation.
         """
-        obs_tem = to_torch(batch.obs, device=self._device, dtype=torch.float32) #转化为tensor，GCN层需要
+        obs_tem = to_torch(batch.obs, device=self._device, dtype=torch.float32) #tensor，GCN
         logits, hidden = self.actor.get_logits(obs_tem, self.edge_index), None
         mask = to_torch(batch['info'].mask, device=self._device)
         
