@@ -101,7 +101,7 @@ class TelemetryPPO(PPOPolicy):
         v_s, v_s_ = [], []
         with torch.no_grad():
             for minibatch in batch.split(self._batch, shuffle=False, merge_last=True):
-                obs_tem = to_torch(minibatch.obs, device=self._device, dtype=torch.float32) #转化为tensor，GCN层需要
+                obs_tem = to_torch(minibatch.obs, device=self._device, dtype=torch.float32) #tensor，GCN
                 obs_next_tem = to_torch(minibatch.obs, device=self._device, dtype=torch.float32)
                 v_s.append(self.critic(obs_tem, self.edge_index))
                 v_s_.append(self.critic(obs_next_tem, self.edge_index))
