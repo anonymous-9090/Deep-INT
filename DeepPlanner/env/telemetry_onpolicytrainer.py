@@ -134,7 +134,7 @@ class TelemetryTrainer(BaseTrainer):
             **kwargs,
         )
         
-        self.best_probe_path = None #输出奖励值最高的方案
+        self.best_probe_path = None 
 
     def test_step(self) -> Tuple[Dict[str, Any], bool]:
         """Perform one testing step."""
