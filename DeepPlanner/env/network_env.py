@@ -22,7 +22,7 @@ class TelemetryEnv(gym.Env):
         self.alpha = 1e-12    # Weight of freshness
         self.beta= 1 # Weight of control plane overhead
         self.norm_param=1e-10    # Balance coefficient of auxiliary reward value
-        self.norm_param_final=1e-1    # final奖励值均衡系数
+        self.norm_param_final=1e-1    # final
         self.bal_param = 1    # Balance coefficient of final reward value
         self.telemetry_type = 5     # Types of telemetry items
         
@@ -136,19 +136,6 @@ class TelemetryEnv(gym.Env):
         
         return state, {'num_steps': self._num_steps, 'mask': self.mask}
         
-    # def clc_rwd(self):
-        
-    #     probe_len = [len(x) for x in self._laststate["probe"]]  #计算探针集合中每个探针的长度
-    #     max_probe_len = max(probe_len)  #最长探针长度
-    #     probe_num = len(probe_len)  #探针数量
-    #     probe_var = [x for x in probe_len if x != 0]    #探针长度集合的方差，把0排除在外
-    #     if probe_num == 1:  #只有一个探针流的时候
-    #         probe_var = 0
-    #     else:
-    #         probe_var = variance(probe_len)
-    #     rwd = -(self.alpha*(probe_var + max_probe_len) + self.beta*probe_num) * self.norm_param
-        
-    #     return rwd
     
     def clc_rwd_cost(self, action):     
         
