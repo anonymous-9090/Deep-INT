@@ -32,7 +32,7 @@ def get_args():
     parser.add_argument('--step-per-collect', type=int, default=None)
     parser.add_argument('--episode-per-collect', type=int, default=50)
     
-    parser.add_argument('--lr', type=float, default=0.00025)
+    parser.add_argument('--lr', type=float, default=0.00001)
     parser.add_argument('--wd', type=float, default=1e-4)
     parser.add_argument('--eps-clip', type=float, default=0.15)
     parser.add_argument('--lr-decay', type=bool, default=False)
