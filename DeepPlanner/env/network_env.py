@@ -19,7 +19,7 @@ class TelemetryEnv(gym.Env):
         self.graphml_file = g
         self.G = nx.read_graphml(self.graphml_file)
         
-        self.alpha = 0    # Weight of freshness
+        self.alpha = 1e-12    # Weight of freshness
         self.beta= 1 # Weight of control plane overhead
         self.norm_param=1e-10    # Balance coefficient of auxiliary reward value
         self.norm_param_final=1e-1    # final奖励值均衡系数
