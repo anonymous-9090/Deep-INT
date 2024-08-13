@@ -127,7 +127,7 @@ For example(Nsfnet):
 ```
 input: [[[17, 20, 22, 2, 16, 13, 29, 24, 21]], [[7, 27, 8, 3, 5, 0]], [[12, 10, 18]]]
 ```
-The telemetry data can be found in the database like this:
+The telemetry data can be read in the database like this:
 
 ![alt text](image.png)
 ## PID-tuner
