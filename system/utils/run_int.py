@@ -244,13 +244,13 @@ class ExerciseRunner:
         print("links:", self.net.links)
         os.system('bash /home/p4/tutorials/utils/script_basic.sh')
         sleep(1)
-        # nat1.cmd("sudo python3 /home/p4/tutorials/exercises/basic/receive.py > /home/p4/tutorials/exercises/basic/receive.log 2>&1 &")
+        # nat1.cmd("sudo python3 /home/p4/tutorials/exercises/Deep-INT/receive.py > /home/p4/tutorials/exercises/basic/receive.log 2>&1 &")
         print("Parsed links:", self.links)
         self.number_ports()
         print("ports:", self.port_number_map)
         print("interfaces:", self.interface_map)
-        # thread = threading.Thread(target=self.adjust_link_delay)
-        # thread.start()
+        thread = threading.Thread(target=self.adjust_link_delay)
+        thread.start()
         while True:
             try:
                 path = input("input:")
@@ -354,9 +354,9 @@ class ExerciseRunner:
 
     def adjust_link_delay(self):
         while True:
-            s4 = self.net.get("s4")
-            s7 = self.net.get("s7")
-            link1 = self.net.linksBetween(s4, s7)[0]
+            s9 = self.net.get("s9")
+            s11 = self.net.get("s11")
+            link1 = self.net.linksBetween(s9, s11)[0]
             link = random.choice(self.net.links)
             new_delay = f'{random.randint(10, 20)}ms'
             link1.intf1.config(delay=new_delay)
@@ -493,7 +493,7 @@ class ExerciseRunner:
 
             link_dict = {'node1':s,
                         'node2':t,
-                        'latency':'100ms',
+                        'latency':'0ms',
                         'bandwidth': None
                         }
             if len(link) > 2:
