@@ -82,7 +82,7 @@ Comparison algorithms
 
 **INT/sendint.py**：Send INT probe packets.
 
-**INT/Makefile**：Set the BMv2 switch executable to simple_switch_grpc and specifies the default topology file as topos/Nsfnet.json.
+**INT/Makefile**：Set the topology configuration file for Mininet.
 
 **utils/run_int.py**：To create a experimental Mininet environment and create specified probes.
 
