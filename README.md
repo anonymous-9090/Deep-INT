@@ -24,6 +24,7 @@
         -- telemetry_main_a2c.py
 	-- telemetry_main_pg.py
 	-- telemetry_main_ppo.py
+        -- dp_path.py
 -- other_algo
         -- dfs.py
         -- euler_balance.py
