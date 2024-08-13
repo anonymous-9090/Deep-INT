@@ -56,13 +56,9 @@ Comparison algorithms
 **temetry_pg/**：The policy of PG algorithm
 
 **temetry_ppo/**：The policy of PPO algorithm
-
 **topo/**：The topologies used in this project
-
 **telemetry_main_a2c.py**：Strat training A2C
-
 **telemetry_main_pg.py**：Strat training PG
-
 **telemetry_main_ppo.py**：Strat training PPO
 
 ## System
