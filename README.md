@@ -1,5 +1,5 @@
 # Deep-INT: Towards Generic and Tunable In-band Network Telemetry Orchestration
-## Project Description
+## Overview of Deep-INT
 ![alt text](image-2.png)
 ## Requirements
 - The development and testing environment for this project is based on [P4 tutorials](https://github.com/p4lang/tutorials/tree/master), which provides a series of P4 program examples and tools for learning and experimenting with the P4 language. Specifically, the project uses the following environment and tools:
