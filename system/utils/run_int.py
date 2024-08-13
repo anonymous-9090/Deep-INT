@@ -13,8 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-# Adapted by Robert MacDavid (macdavid@cs.princeton.edu) from scripts found in
-# the p4app repository (https://github.com/p4lang/p4app)
+# Adapted from scripts found in the p4app repository (https://github.com/p4lang/p4app)
 #
 # We encourage you to dissect this script to better understand the BMv2/Mininet
 # environment used by the P4 tutorial.
