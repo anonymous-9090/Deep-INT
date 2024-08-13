@@ -115,13 +115,14 @@ sudo python3 telemetry_main_a2c.py
 sudo python3 telemetry_main_pg.py
 sudo python3 telemetry_main_ppo.py
 ```
-## Start INT
+## Start INT system
 Start the system:
 ```
-cd System/INT
+cd system/INT
 sudo make run
 ```
 Input INT paths:
+
 For example(Nsfnet):
 ```
 input: [[[17, 20, 22, 2, 16, 13, 29, 24, 21]], [[7, 27, 8, 3, 5, 0]], [[12, 10, 18]]]
