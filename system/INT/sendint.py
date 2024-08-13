@@ -229,7 +229,7 @@ class PacketSender(object):
         """
         while True:
             try:
-                with open('time.txt', 'r') as f:
+                with open('/home/p4/tutorials/exercises/Deep-INT/PID/time.txt', 'r') as f:
                     self.sleep_interval = float(f.read().strip())
             except Exception as e:
                 print(f"Error reading time.txt: {e}")
