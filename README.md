@@ -63,24 +63,9 @@ Comparison algorithms
 
 **topo/**：The topologies used in this project
 
-**telemetry_main_a2c.py**：Strat training A2C
-
-**telemetry_main_pg.py**：Strat training PG
-
-**telemetry_main_ppo.py**：Strat training PPO
-
 ## System
-**utils/mininet/**：Useful tools about Mininet
-
-**utils/p4runtime_lib/**：To abstract a P4-enabled switch, the P4Runtime library is used. Using the P4RuntimeSwitch abstraction, the switch can be emulated within Mininet
 
 **utils/run_int.py**：To create a experimental Mininet environment and create specified probes
-
-**utils/p4runtime_switch.py**：The documentation P4Runtime is available at https://p4.org/specs/
-
-**utils/netstat.py**：Obtain information about network connections and determines if the specified port is in a listening state by checking these connections
-
-**utils/p4_mininet.py**：Used to define custom P4 switch and host classes for Mininet
 
 **utils/script_basic.sh**:To configure flow table information of OVS switch
 
