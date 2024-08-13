@@ -62,7 +62,7 @@ Comparison algorithms
 
 **telemetry_ppo/**：The policy of PPO algorithm.
 
-**topo/**：The topologies used in this project.
+**topo/**：The topologies used in this project are from the [Internet Topology Zoo](http://www.topology-zoo.org/index.html).
 
 **dp_path.py**：Generate probe paths input to the data plane.
 
