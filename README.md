@@ -33,7 +33,7 @@
 -- system
         -- INT
 	        -- topos/
-	        -- switch-config/
+	        -- switch-config-Nsfnet/
                 -- INT.p4
                 -- header.p4
                 -- parser.p4
