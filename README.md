@@ -11,7 +11,6 @@
 - Python Version: >= 3.8
 ## Code Architecture
 ```
-
 -- DeepPlanner
 	-- env/
         -- telemetry_a2c/
@@ -51,8 +50,6 @@
         	-- p4runtime_switch.py
                 -- script_basic.sh
                 -- Makefile
-	
-
 ```
 ## other_algo
 Comparison algorithms
