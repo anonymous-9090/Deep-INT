@@ -68,7 +68,7 @@ class PacketSender(object):
             28: 4,
             29: 5
         }
-        self.sleep_interval = 1
+        self.sleep_interval = 0.6
 
     def send_packets(self):
         """
