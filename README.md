@@ -26,26 +26,28 @@
 	-- control_interval.py
 	-- no-control_interval.py
 -- other_algo
+	-- INT_balance.py
         -- dfs.py
         -- euler_balance.py
         -- euler_unbalance.py
-        -- INT_balance.py
 -- system
         -- INT
+		-- switch-config-Nsfnet/
 	        -- topos/
-	        -- switch-config-Nsfnet/
                 -- INT.p4
                 -- header.p4
                 -- parser.p4
                 -- receiveint.py
                 -- sendint.py
                 -- Makefile
+                -- bitmap.txt
 	-- utils
                 -- mininet/
                 -- p4runtime_lib/
-		-- run_exercise.py
+		-- run_int.py
 		-- netstat.py
 		-- p4_mininet.py
+		-- p4apprunner.py
         	-- p4runtime_switch.py
                 -- script_basic.sh
                 -- Makefile
