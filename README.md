@@ -115,7 +115,7 @@ sudo python3 telemetry_main_a2c.py
 sudo python3 telemetry_main_pg.py
 sudo python3 telemetry_main_ppo.py
 ```
-## Start INT system
+## Start INT System
 Start the system:
 ```
 cd system/INT
