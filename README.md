@@ -11,9 +11,6 @@
 - Python Version: >= 3.8
 ## Code Architecture
 ```
--- PID
-	-- control_interval.py
-	-- no-control_interval.py
 
 -- DeepPlanner
 	-- env/
@@ -25,12 +22,15 @@
 	-- telemetry_main_pg.py
 	-- telemetry_main_ppo.py
         -- dp_path.py
+-- PID
+	-- control_interval.py
+	-- no-control_interval.py
 -- other_algo
         -- dfs.py
         -- euler_balance.py
         -- euler_unbalance.py
         -- INT_balance.py
--- Syetem
+-- system
 	-- utils
                 -- mininet/
                 -- p4runtime_lib/
