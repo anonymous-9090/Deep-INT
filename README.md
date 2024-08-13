@@ -132,6 +132,7 @@ The telemetry data can be read in the database like this:
 ![alt text](image.png)
 ## PID-tuner
 You need to revise the sendint.py script to continuously send INT probes.
+
 Start the INT system and run PID control script:
 ```
 sudo python3 control_interval.py
