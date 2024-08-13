@@ -249,8 +249,8 @@ class ExerciseRunner:
         self.number_ports()
         print("ports:", self.port_number_map)
         print("interfaces:", self.interface_map)
-        thread = threading.Thread(target=self.adjust_link_delay)
-        thread.start()
+        # thread = threading.Thread(target=self.adjust_link_delay)
+        # thread.start()
         while True:
             try:
                 path = input("input:")
