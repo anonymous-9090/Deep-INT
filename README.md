@@ -68,7 +68,7 @@ Comparison algorithms
 
 ## System
 
-**INT/switch-config/**：To configure flow tables of different switches.
+**INT/switch-config-Nsfnet/**：To configure flow tables of different switches.
 
 **INT/topos/**：All topologies used in the project.
 
