@@ -121,7 +121,7 @@ Start the system:
 cd system/INT
 sudo make run
 ```
-Input INT paths:
+Input probe paths:
 
 For example(Nsfnet):
 ```
