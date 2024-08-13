@@ -18,7 +18,7 @@
 #
 # We encourage you to dissect this script to better understand the BMv2/Mininet
 # environment used by the P4 tutorial.
-#
+# Additional modifications to adapt the project Deep-INT.
 import argparse
 import json
 import os
