@@ -84,7 +84,7 @@
 
 **utils/run_int.py**：To create a experimental Mininet environment and create specified probes.
 
-**utils/script_basic.sh**:To configure the flow table information of the OVS switch.
+**utils/script_basic.sh**: To configure the flow table information of the OVS switch.
 
 **utils/Makefile**：Compile P4 programs and run the BMv2 simulator.
 
