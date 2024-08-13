@@ -14,9 +14,9 @@
 
 -- DeepPlanner
 	-- env/
-        -- temetry_a2c/
-        -- temetry_pg/
-        -- temetry_ppo/
+        -- telemetry_a2c/
+        -- telemetry_pg/
+        -- telemetry_ppo/
         -- topo/
         -- telemetry_main_a2c.py
 	-- telemetry_main_pg.py
