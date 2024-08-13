@@ -57,41 +57,41 @@
 ## other_algo
 Comparison algorithms
 ## DeepPlanner
-**env/**：The environment of DRL algorithm
+**env/**：The environment of DRL algorithm.
 
-**temetry_a2c/**：The policy of A2C algorithm
+**telemetry_a2c/**：The policy of A2C algorithm.
 
-**temetry_pg/**：The policy of PG algorithm
+**telemetry_pg/**：The policy of PG algorithm.
 
-**temetry_ppo/**：The policy of PPO algorithm
+**telemetry_ppo/**：The policy of PPO algorithm.
 
-**topo/**：The topologies used in this project
+**topo/**：The topologies used in this project.
 
-**dp_path.py**：Generate probe paths input to the data plane
+**dp_path.py**：Generate probe paths input to the data plane.
 
 ## System
 
-**utils/run_int.py**：To create a experimental Mininet environment and create specified probes
+**INT/switch-config/**：To configure flow tables of different switches.
 
-**utils/script_basic.sh**:To configure flow table information of OVS switch
+**INT/topos/**：All topologies used in the project.
 
-**utils/Makefile**：Compile P4 programs and run the BMv2 simulator
+**INT/INT.p4**：Source routing and INT main procedure.
 
-**INT/topos/**：All topologies used in the project
+**INT/header.p4**：Define headers and metadatas.
 
-**INT/switch-config/**：To configure flow tables of different switches
+**INT/parser.p4**：Define parser, deparser and checksum calculator.
 
-**INT/INT.p4**：Do source routing and INT
+**INT/receiveint.py**：Collect INT probe packets and store the collected telemetry data in the database.
 
-**INT/header.p4**：Define Headers and Metadatas
+**INT/sendint.py**：Send INT probe packets.
 
-**INT/parser.p4**：Define parser, deparser and checksum calculator
+**INT/Makefile**：Set the BMv2 switch executable to simple_switch_grpc and specifies the default topology file as topos/Nsfnet.json.
 
-**INT/receiveint.py**：Collect INT probe packets and storing the collected network information in the database
+**utils/run_int.py**：To create a experimental Mininet environment and create specified probes.
 
-**INT/sendint.py**：Send INT probe packets
+**utils/script_basic.sh**:To configure the flow table information of the OVS switch.
 
-**INT/Makefile**：Set the BMv2 switch executable to simple_switch_grpc and specifies the default topology file as topos/Nsfnet.json
+**utils/Makefile**：Compile P4 programs and run the BMv2 simulator.
 
 ## Start DeepPlanner
 ### Activate Coding Environment
