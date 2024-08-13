@@ -130,10 +130,9 @@ input: [[[17, 20, 22, 2, 16, 13, 29, 24, 21]], [[7, 27, 8, 3, 5, 0]], [[12, 10, 
 The INT information can be found in your database like this:
 
 ![alt text](image.png)
-## PID Control
+## PID-tuner
 You need to revise the sendint.py script to continuously send INT probes.
-Start INT system.
-Then run PID control script:
+Start the INT system and run PID control script:
 ```
 sudo python3 control_interval.py
 ```
