@@ -1,7 +1,7 @@
 # Deep-INT: Towards Generic and Tunable In-band Network Telemetry Orchestration
 ## Overview of Deep-INT
 ![alt text](image-2.png)
-## Requirements
+## Requirements for Deep-INT
 - The development and testing environment for this project is based on [P4 tutorials](https://github.com/p4lang/tutorials/tree/master), which provides a series of P4 program examples and tools for learning and experimenting with the P4 language. Specifically, the project uses the following environment and tools:
   1. [P4 Compiler (p4c)](https://github.com/p4lang/p4c): Used to compile P4 programs into a format that the target device can understand.
   2. [Behavioral Model (BMv2)](https://github.com/p4lang/behavioral-model/blob/main/docs/simple_switch.md): A software P4 switch used for simulating and testing P4 programs. 
