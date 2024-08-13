@@ -70,7 +70,7 @@ Comparison algorithms
 
 **INT/switch-config-Nsfnet/**：To configure flow tables of different switches.
 
-**INT/topos/**：All topologies used in the project.
+**INT/topos/**：Topologies and related configuration files.
 
 **INT/INT.p4**：Source routing and INT main procedure.
 
