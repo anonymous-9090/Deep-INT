@@ -81,7 +81,7 @@ class PacketSender(object):
         portsLists = info.get('portsLists')
         print("ports:", portsLists)
         actId = 1
-        sendTimes = 1
+        sendTimes = 0.6
         listLen = len(portsLists)
         ports = []
         bitmap_list = [
