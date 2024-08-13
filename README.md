@@ -18,10 +18,10 @@
         -- telemetry_pg/
         -- telemetry_ppo/
         -- topo/
+        -- dp_path.py
         -- telemetry_main_a2c.py
 	-- telemetry_main_pg.py
 	-- telemetry_main_ppo.py
-        -- dp_path.py
 -- PID
 	-- control_interval.py
 	-- no-control_interval.py
@@ -31,6 +31,15 @@
         -- euler_unbalance.py
         -- INT_balance.py
 -- system
+        -- INT
+	        -- topos/
+	        -- switch-config/
+                -- INT.p4
+                -- header.p4
+                -- parser.p4
+                -- receiveint.py
+                -- sendint.py
+                -- Makefile
 	-- utils
                 -- mininet/
                 -- p4runtime_lib/
@@ -40,15 +49,7 @@
         	-- p4runtime_switch.py
                 -- script_basic.sh
                 -- Makefile
-	-- INT
-	        -- topos/
-	        -- switch-config/
-                -- app.p4
-                -- header.p4
-                -- parser.p4
-                -- receivenew.py
-                -- sendint.py
-                -- Makefile
+	
 
 ```
 ## other_algo
