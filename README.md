@@ -1,4 +1,4 @@
-# Deep-INT
+# Deep-INT: Towards Generic and Tunable In-band Network Telemetry Orchestration
 ## Project Description
 ![alt text](image-2.png)
 ## Requirements
