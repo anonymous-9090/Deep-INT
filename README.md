@@ -51,8 +51,6 @@
                 -- script_basic.sh
                 -- Makefile
 ```
-## other_algo
-Comparison algorithms
 ## DeepPlanner
 **env/**：The environment of DRL algorithm.
 
