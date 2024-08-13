@@ -241,14 +241,14 @@ class ExerciseRunner:
         # some programming that must happen after the net has started
         self.program_hosts()
         self.program_switches()
-        print("links:", self.net.links)
+        # print("links:", self.net.links)
         os.system('bash /home/p4/tutorials/utils/script_basic.sh')
         sleep(1)
         # nat1.cmd("sudo python3 /home/p4/tutorials/exercises/Deep-INT/receive.py > /home/p4/tutorials/exercises/basic/receive.log 2>&1 &")
-        print("Parsed links:", self.links)
+        # print("Parsed links:", self.links)
         self.number_ports()
-        print("ports:", self.port_number_map)
-        print("interfaces:", self.interface_map)
+        # print("ports:", self.port_number_map)
+        # print("interfaces:", self.interface_map)
         # thread = threading.Thread(target=self.adjust_link_delay)
         # thread.start()
         while True:
