@@ -50,13 +50,21 @@
 Comparison algorithms
 ## DeepPlanner
 **env/**：The environment of DRL algorithm
+
 **temetry_a2c/**：The policy of A2C algorithm
+
 **temetry_pg/**：The policy of PG algorithm
+
 **temetry_ppo/**：The policy of PPO algorithm
+
 **topo/**：The topologies used in this project
+
 **telemetry_main_a2c.py**：Strat training A2C
+
 **telemetry_main_pg.py**：Strat training PG
+
 **telemetry_main_ppo.py**：Strat training PPO
+
 ## System
 **utils/mininet/**：Useful tools about Mininet
 **utils/p4runtime_lib/**：To abstract a P4-enabled switch, the P4Runtime library is used. Using the P4RuntimeSwitch abstraction, the switch can be emulated within Mininet
