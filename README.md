@@ -9,6 +9,7 @@
   4. [P4Runtime](https://p4.org/specs/): Used for runtime control of the behavior of P4 switches.
 - Operating System: Linux Ubuntu 20.04
 - Python Version: >= 3.8
+- Install Open vSwitch by reading the [installation guide](https://github.com/openvswitch/ovs/blob/main/Documentation/intro/install/general.rst).  
 ## Code Architecture
 ```
 -- DeepPlanner
@@ -125,7 +126,7 @@ For example(Nsfnet):
 ```
 input: [[[17, 20, 22, 2, 16, 13, 29, 24, 21]], [[7, 27, 8, 3, 5, 0]], [[12, 10, 18]]]
 ```
-The telemetry data can be read in the database like this:
+If you have configured the MySQL database correctly， the telemetry data can be read in the database like this:
 
 ![alt text](image.png)
 ## Start PID-tuner
