@@ -116,18 +116,18 @@ sudo python3 telemetry_main_pg.py
 sudo python3 telemetry_main_ppo.py
 ```
 ## Start INT System
-Start the system (You need to replace the absolute path in files with your own path) :
+Start the system (You need to replace the absolute path in files with your own path):
 ```
 cd system/INT
 sudo make run
 ```
 Input probe paths:
 
-For example(Nsfnet):
+For example (Nsfnet):
 ```
 input: [[[17, 20, 22, 2, 16, 13, 29, 24, 21]], [[7, 27, 8, 3, 5, 0]], [[12, 10, 18]]]
 ```
-If you have configured the MySQL database correctly， the telemetry data can be read in the database like this:
+If you have configured the MySQL database correctly，the telemetry data can be read in the database like this:
 
 ![alt text](image.png)
 ## Start PID-tuner
