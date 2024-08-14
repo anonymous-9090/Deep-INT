@@ -106,6 +106,7 @@ sudo pip install tianshou==0.4.11
 sudo pip install matplotlib==3.7.3
 sudo pip install scipy==1.10.1
 sudo pip install torch_geometric==2.5.3
+sudo pip install networkx
 ```
 ### Start Training
 ```
