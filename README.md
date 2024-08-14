@@ -115,7 +115,7 @@ sudo python3 telemetry_main_pg.py
 sudo python3 telemetry_main_ppo.py
 ```
 ## Start INT System
-Start the system:
+Start the system (You need to replace the absolute path in files with your own path) :
 ```
 cd system/INT
 sudo make run
