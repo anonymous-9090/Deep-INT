@@ -55,6 +55,7 @@ control DeparserImpl(packet_out packet, in headers hdr) {
         packet.emit(hdr.sr);
         packet.emit(hdr.device_no);
         packet.emit(hdr.ingress_port);
+        packet.emit(hdr.egress_port);
         packet.emit(hdr.ingress_global_timestamp);
         packet.emit(hdr.egress_global_timestamp);
         packet.emit(hdr.enq_qdepth);
