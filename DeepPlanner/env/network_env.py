@@ -19,11 +19,11 @@ class TelemetryEnv(gym.Env):
         self.graphml_file = g
         self.G = nx.read_graphml(self.graphml_file)
         
-        self.alpha = 1e-12              #timeliness weight
-        self.beta= 1                    #control plane overhead weight
-        self.norm_param=1e-10           #data plane overhead weight
+        self.alpha = 0.01               #timeliness weight
+        self.beta= 0.24                 #control plane overhead weight
+        self.norm_param=1e-7            #data plane overhead weight
         self.norm_param_final=1e-1      #normalized parameter
-        self.bal_param = 1              #balanced parameter
+        self.bal_param = 0.3            #balanced parameter
         self.telemetry_type = 5         #types of telemetry data
         self.fixed = 106                #fixed header length in bytes
         self.MTU = 1500                 #MTU in bytes
